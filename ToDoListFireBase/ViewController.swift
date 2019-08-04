@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     var ref: DatabaseReference!
     
+    
     @IBOutlet weak var GetDataTextField: UITextField!
     
     override func viewDidLoad() {
