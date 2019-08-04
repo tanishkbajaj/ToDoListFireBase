@@ -12,7 +12,7 @@ import FirebaseDatabase
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var items: [GroceryItem] = []
+   
     var keyArray: [String] = []
     //var vc: ViewController
     @IBOutlet weak var TableViewOutlet: UITableView!
