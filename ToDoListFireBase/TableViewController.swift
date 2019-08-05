@@ -23,12 +23,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
    
     
     func fetchDataFromFirebase() {
-        
-        
-        
-       
-        
-        ref = Database.database().reference().child("To Do List")
+      ref = Database.database().reference().child("To Do List")
         
         //reading value from backend
         ref.observe(.value) { (snapshot: DataSnapshot) in
@@ -157,8 +152,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.CellLabel.textColor = .black
         // self.TableViewOutlet.reloadData()
         
-        
+        self.keyArray.removeAll()
         self.TableViewOutlet.reloadData()
+        
         
     }
     
